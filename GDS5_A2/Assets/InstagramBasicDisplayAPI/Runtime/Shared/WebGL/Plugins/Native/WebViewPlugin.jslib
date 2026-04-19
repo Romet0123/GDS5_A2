@@ -2,9 +2,9 @@ var WebViewPlugin = {
     $internal: {
     },
     Instagram_WebView_NavigateTo: function(urlPtr) {
-        var url = Pointer_stringify(urlPtr);
+        var url = UTF8ToString(urlPtr);
         
-        window.location.href = url;
+        window.top.location.href = url;
     }
 };
 
